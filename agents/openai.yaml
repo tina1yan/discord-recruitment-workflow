@@ -1,0 +1,4 @@
+interface:
+  display_name: "Discord 社群招募"
+  short_description: "筛选匹配的外部招募频道，核实发帖回执，退出临时群并记录真实效果"
+  default_prompt: "使用 $discord-recruitment，读取现有项目状态，完成一个有时限的外部招募批次并记录真实发布结果。"

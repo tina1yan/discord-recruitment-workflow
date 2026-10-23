@@ -1,2 +1,36 @@
-# discord-recruitment-workflow
-Reusable Discord community recruitment workflow for ChatGPT Work and Codex: targeted outreach, verified posts, temporary-server cleanup, and honest reporting.
+# Discord 社群招募工作流
+
+一套从实际 SUP Gaming 招募中提炼的文字工作流：找匹配入口 → 正常确认邀请与新手引导 → 单条发布 → 核实回执 → 退出临时群 → 记下结果。可在 ChatGPT Work 或 Codex 中使用，不需要编写 Discord 自动化脚本。
+
+- [执行工作流 SKILL.md](SKILL.md)：入口选择、客户端操作、冷却、失败处理与退出。
+- [SUP 资料和三套完成稿](references/sup-profile.md)：通用中文、双语、北美 HOK 公会招募。
+- [最小台账字段](references/run-log.md)：防止重复发布，并区分发帖、净增和真实归因。
+
+## 在 Work 新窗口接手
+
+1. 使用 **ChatGPT 桌面版 → Work**，启用 Computer Use；让新窗口可以读取本工作流和原项目的最新状态/台账。
+2. 保持 Discord 客户端已登录。Windows 操作使用当前桌面，同一客户端不要由两个任务同时控制。
+3. 如果工作流没有在 Skills 列表中出现，直接提供本目录的 `SKILL.md` 和相关资料即可。保存在 GitHub 不等于已经安装成插件，也不代表已经启动后台任务。
+4. 复制下面的启动指令。若实际目标不是 SUP，先换成自己的已确认社区资料。
+
+```text
+使用我提供的 discord-recruitment 工作流继续帮 SUP Gaming 招人。
+
+先读取 SKILL.md、references/sup-profile.md，以及原 SUP 项目的 STATUS.md 和最新渠道台账；不要重建事实库。新窗口若读不到原台账，先告诉我缺少哪个文件，不要把历史入口当成未发过。
+
+本轮授权：在明确允许社群/公会推广的相关外部频道发布真实招募；为宣传新加入的临时群，发一条、核实回执后退出，不能发也退出。保留我原本长期加入的社区。普通兴趣、颜色、频道选择自行选择或跳过。不要虚构个人身份或活动。
+
+优先用已登录的 Discord 客户端，实际点击确认邀请、完成普通新手步骤后再判断是否受阻。优先海外中文游戏玩家和 HOK 等相关游戏的招募入口；Reddit 已决定跳过，B站不作为主渠道。遇到当前工具必须确认或由我完成的验证，只停该路径，先推进其他可用入口。
+
+只拉人，不组织活动。新帖统一用 https://discord.com/invite/4k8jhR8av4 。先做30分钟小批次，最多检查5个候选、核实发布3条后回报。已有帖子先核最近时间，避免重复；HOK历史规则是六小时，请现场重核。不要新建自动 bump 循环或恢复旧调度。
+
+每条保存真实消息链接和结果。回报外部成功发布数、退出临时群数、耗时和可归因新增；不知道的数据写未知。把进度写回原项目记录，给我简短结果和下一步。
+```
+
+## Work 还是 Codex
+
+日常招募、网页查找、客户端操作和结果记录适合 Work。维护代码、修复工具或审查仓库时，Codex 的开发视图更有用。这是任务适配建议，不能仅凭换窗口保证省额度；模型、上下文长度、截图和无效重试仍影响消耗。
+
+本包只保存可复用说明和公开社区资料。账号登录态、私人对话、成员进退日志和原始截图不随包发布。它不是自动发帖机器人，没有无人值守循环。
+
+官方参考（2026-10-23 查阅）：[Work 入门](https://learn.chatgpt.com/docs/get-started-with-work)、[Computer Use](https://learn.chatgpt.com/docs/computer-use)、[Skills](https://learn.chatgpt.com/docs/build-skills)。
